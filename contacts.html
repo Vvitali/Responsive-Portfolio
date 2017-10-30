@@ -5,91 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css" type="text/css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
     <title>Bootstrap Portfolio</title>
+
 </head>
 
 <body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-                <a class="navbar-brand" href="#">Vorobyev Vitaliy</a>
-            </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                </ul>
-                <form class="navbar-form navbar-left">
-                    <!-- empty container-->
-                </form>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="./index.html">About</a></li>
-                    <li><a href="./portfolio.html">Portfolio</a></li>
-                    <li><a href="./contacts.html">Contact</a></li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar">
+        <div class="name-panel">
+            <p>Vorobyev Vitaliy</p>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-xs-12">
-                <h1 class="page-header bottom">Contact</h1>
-
-
-            </div>
-            <div class="col-md-4 hidden-xs">
-                <!-- empty block -->
-            </div>
-        </div>
-
-        <div class="row">
-            <!-- Contact me body -->
-            <div class="col-md-8 col-xs-12">
-                <form>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Name</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Name">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                    </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                </form>
-            </div>
-
-            <!-- side-bar  -->
-            <div class="col-md-4 col-xs-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Connect with me</h3>
-                    </div>
-                    <div class="panel-body">
-                        <ul style="list-style-type: none">
-                            <li><a href="https://www.linkedin.com/in/vitaliy-vorobyev-b5971210a/" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/11-linkedin-128.png" style="height: 30px" alt="linkedin image"> LinkedIn </a></li>
-                            <li><a href="https://www.facebook.com/profile.php?id=100001539428317" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_six_black-128.png" style="height: 30px" alt="facebook image">Facebook</a></li>
-                            <li><a href="https://github.com/Vvitali" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_black-128.png" style="height: 30px" alt="facebook logo">GitHub</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- container's end -->
+        <ul class="navbar-right">
+            <li><a href="./index.html">About</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./contacts.html">Contact</a></li>
+        </ul>
     </div>
 
+    <!-- main -->
+    <div class="main-part">
+        <h1 class="page-header">Contact form</h1>
+        <hr>
+        <!-- main -->
+        <form class="contact-form">
+
+            <p>Name</p>
+            <label for="name"> </label>
+            <input type="text" placeholder="John Smith" name="name">
+
+            <p>E-mail</p>
+            <label for="email"> </label>
+            <input type="email" placeholder="example@example.com" name="email">
+            <p>Message</p>
+            <label for="message"></label>
+
+            <textarea name="message"></textarea>
+
+            <button>Submit</button>
+        </form>
+    </div>
+
+    <!-- side-bar  -->
+    <div class="Sidebar">
+        <div class="sidebar-heading">
+            <h3 class="panel-title">Connect with me</h3>
+        </div>
+        <hr>
+        <div class="sidebar-body">
+            <ul style="list-style-type: none">
+                <li><a href="https://www.linkedin.com/in/vitaliy-vorobyev-b5971210a/" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/11-linkedin-128.png" style="height: 30px" alt="linkedin image"> LinkedIn </a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100001539428317" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_six_black-128.png" style="height: 30px" alt="facebook image"> Facebook</a></li>
+                <li><a href="https://github.com/Vvitali" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_black-128.png" style="height: 30px" alt="facebook logo"> GitHub</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
 
 </html>
