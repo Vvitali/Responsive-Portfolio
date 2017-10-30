@@ -17,6 +17,11 @@ a {
     margin: 0px;
 }
 
+hr {
+    background-color: #CCCCCC;
+    height: 1px;
+}
+
 .name-panel {
     min-height: 20px;
     max-height: 70px;
@@ -50,7 +55,9 @@ a {
 }
 
 .main-part {
-
+    background-color: white;
+    margin: 15px;
+    padding: 15px;
     float: left;
     width: 66%;
     font-size: 18px;
@@ -58,6 +65,9 @@ a {
 }
 
 .Sidebar {
+    background-color: white;
+    margin: 25px 15px 15px 15px;
+    padding: 15px;
     font-family: 'ABeeZee', sans-serif;
     float: left;
     display: block;
@@ -78,20 +88,12 @@ a {
     .name-panel {
         padding-top: 15px;
         margin-bottom: 10px;
-
         height: 30px;
         font-size: 19px;
-
-
         max-width: none;
         width: 100%;
-
         float: left;
-
-
-
     }
-
     .navbar-right {
         text-align: center;
     }
@@ -102,13 +104,18 @@ a {
     }
     .navbar-right li {
         padding: 5px 7.5% 5px 7.5%;
-
     }
-
     .navbar {
         width: 100%;
         height: 80px;
 
+    }
+
+    .main-part {
+        float: none;
+        width: auto;
+        font-size: 18px;
+        font-family: 'ABeeZee', sans-serif;
     }
 
     .Sidebar {
